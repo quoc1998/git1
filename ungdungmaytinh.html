@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8"
+    <title>javascrip</title>
+    <style>
+        #ketqua{
+            margin: 20px;
+            padding: 30px;
+            background: #9b9b9b;
+            color: white;
+        
+        }
+        
+    </style>
+    </head>
+    <body>
+        <input type="text" id="soa"/>
+        <input type="text"  id="sob">
+        <input type="button" value="phep cong"onclick="tong()"/>
+        <input type="button" value="phep tru"onclick="tru()"/>
+        <input type="button" value="phep nhan"onclick="nhan()"/>
+        <input type="button" value="phep chia"onclick="chia()"/>
+        <div id="ketqua"></div>
+        <script>
+        function tong(){
+            var a = document.getElementById("soa").value;
+            var b = document.getElementById("sob").value;
+            c= parseInt(a)+parseInt(b);
+            document.getElementById("ketqua").innerHTML = a+"+"+b+"="+c;
+        }
+        function hieu(){
+            var a = document.getElementById("soa").value;
+            var b = document.getElementById("sob").value;
+            c= parseInt(a)-parseInt(b);
+            document.getElementById("ketqua").innerHTML = a+"-"+b+"="+c;
+        }
+        function nhan(){
+            var a = document.getElementById("soa").value;
+            var b = document.getElementById("sob").value;
+            c= parseInt(a)*parseInt(b);
+            document.getElementById("ketqua").innerHTML = a+"*"+b+"="+c;
+        }
+        function chia(){
+            var a = document.getElementById("soa").value;
+            var b = document.getElementById("sob").value;
+            c= parseInt(a)/parseInt(b);
+            document.getElementById("ketqua").innerHTML = a+"/"+b+"="+c;
+        }
+
+
+
+
+        </script>
+    </body>
+
+</html>
